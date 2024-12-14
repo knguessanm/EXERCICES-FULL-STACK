@@ -1,0 +1,94 @@
+{{define "footer"}}
+<!-- Début de la section du pied de page -->
+<div class="footer_section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Conteneur Bootstrap centré -->
+
+            <div class="col-md-12 text-center">
+                <!-- Colonne de 12 unités avec texte centré -->
+
+                <div class="location_text">
+                    <!-- Section contenant les informations de contact -->
+
+                    <ul class="list-inline">
+                        <!-- Liste en ligne pour les éléments de contact -->
+
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="padding_15">
+                                    <!-- Icône de téléphone mobile -->
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                </span>
+                                <br>Appel : +225 0707708070
+                                <!-- Texte de contact pour l'appel téléphonique -->
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="padding_15">
+                                    <!-- Icône d'enveloppe (email) -->
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </span>
+                                <br>Mail : luluboutik@gmail.com
+                                <!-- Texte de contact pour l'email -->
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de la section du pied de page -->
+
+<!-- Styles CSS intégrés pour la mise en forme de la section du pied de page -->
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        /* Le corps est configuré pour utiliser flexbox et occuper toute la hauteur de la fenêtre */
+    }
+    .content {
+        flex: 1;
+        /* Le contenu principal occupe tout l'espace disponible restant */
+    }
+    .footer_section {
+        background-color: #f8f9fa;
+        /* Couleur d'arrière-plan pour le pied de page */
+        padding: 10px 0;
+        /* Padding pour l'espace vertical */
+        text-align: center;
+        /* Centrage du texte */
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        /* Le pied de page est positionné en bas et prend toute la largeur */
+    }
+    .location_text ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        /* Réinitialisation du padding, des marges et de la liste */
+    }
+    .location_text ul li {
+        display: inline-block;
+        margin: 0 15px;
+        /* Les éléments de la liste sont affichés en ligne avec une marge entre eux */
+    }
+    .location_text ul li a {
+        color: #000;
+        text-decoration: none;
+        /* Style des liens de contact */
+    }
+    .padding_15 {
+        display: block;
+        margin-bottom: 5px;
+        /* Ajoute un espace entre l'icône et le texte */
+    }
+</style>
+{{end}}

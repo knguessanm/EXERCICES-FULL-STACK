@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de l'ONG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blog de l'ONG</h1>
+        <nav>
+            <ul>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="rss.xml" target="_blank">Flux RSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Articles -->
+        <section id="articles">
+            <h2>Articles</h2>
+            <article id="article1">
+                <h3>Titre de l'article 1</h3>
+                <p>Date de publication : 01/01/2024</p>
+                <p>Contenu de l'article 1. Ceci est un exemple de contenu pour l'article 1.</p>
+                <button onclick="toggleComments('comments1')">Voir les commentaires</button>
+                <div id="comments1" class="comments-section">
+                    <h4>Commentaires</h4>
+                    <div class="comment">
+                        <p><strong>Alice</strong> : Merci pour cet article inspirant!</p>
+                    </div>
+                    <form class="comment-form" onsubmit="addComment(event, 'comments1')">
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <textarea name="comment" placeholder="Votre commentaire" required></textarea>
+                        <button type="submit">Commenter</button>
+                    </form>
+                </div>
+            </article>
+            <article id="article2">
+                <h3>Titre de l'article 2</h3>
+                <p>Date de publication : 02/01/2024</p>
+                <p>Contenu de l'article 2. Ceci est un exemple de contenu pour l'article 2.</p>
+                <button onclick="toggleComments('comments2')">Voir les commentaires</button>
+                <div id="comments2" class="comments-section">
+                    <h4>Commentaires</h4>
+                    <div class="comment">
+                        <p><strong>Bob</strong> : Article très informatif. Merci!</p>
+                    </div>
+                    <form class="comment-form" onsubmit="addComment(event, 'comments2')">
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <textarea name="comment" placeholder="Votre commentaire" required></textarea>
+                        <button type="submit">Commenter</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

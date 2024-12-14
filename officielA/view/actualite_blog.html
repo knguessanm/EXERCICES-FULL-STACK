@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Vision d'Amour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Vision d'Amour">
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="donate.html">Dons</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="location.href='login.html'">Connexion</button>
+            <button onclick="location.href='register.html'">Inscription</button>
+        </div>
+    </header>
+
+    <!-- Articles Récents -->
+    <section class="blog-posts">
+        <div class="container">
+            <h2>Articles Récents</h2>
+            <div class="post">
+                <h3><a href="article.html">Titre de l'Article 1</a></h3>
+                <p>Date de Publication - Auteur</p>
+                <p>Résumé ou extrait de l'article. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="article.html" class="read-more">Lire l'article</a>
+                <div class="categories">
+                    <span class="category">Catégorie 1</span>
+                    <span class="category">Catégorie 2</span>
+                </div>
+            </div>
+            <div class="post">
+                <h3><a href="article.html">Titre de l'Article 2</a></h3>
+                <p>Date de Publication - Auteur</p>
+                <p>Résumé ou extrait de l'article. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="article.html" class="read-more">Lire l'article</a>
+                <div class="categories">
+                    <span class="category">Catégorie 1</span>
+                    <span class="category">Catégorie 3</span>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres articles ici -->
+        </div>
+    </section>
+
+    <!-- Pied de Page -->
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">À propos</a>
+            <a href="projects.html">Projets</a>
+            <a href="contact.html">Contact</a>
+            <a href="legal.html">Mentions Légales</a>
+            <a href="privacy.html">Politique de Confidentialité</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <div class="newsletter">
+            <form action="subscribe.php" method="POST">
+                <input type="email" name="email" placeholder="Votre adresse email" required>
+                <button type="submit">S'inscrire à la Newsletter</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

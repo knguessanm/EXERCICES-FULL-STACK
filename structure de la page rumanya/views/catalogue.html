@@ -1,0 +1,117 @@
+{{define "content"}}
+<section style="text-align: center;">
+    <!-- Section centrée contenant le catalogue -->
+
+    <h1>Catalogue</h1>
+    <!-- Titre principal du catalogue -->
+
+    <h2 style="font-weight: bold; color: #008080;">Femme</h2>
+    <!-- Sous-titre pour la section "Femme" avec des styles en ligne -->
+
+    <div class="model" style="margin-bottom: 20px;">
+        <!-- Conteneur pour les modèles femme avec une marge en bas -->
+
+        <div class="image-container">
+            <!-- Conteneur pour les images -->
+
+            <img src="/static/images/catalogue/femme1.jpeg" alt="Modèle Femme 1">
+            <img src="/static/images/catalogue/femme2.jpeg" alt="Modèle Femme 2">
+            <img src="/static/images/catalogue/femme3.webp" alt="Modèle Femme 3">
+            <img src="/static/images/catalogue/femme4.jpg" alt="Modèle Femme 4">
+            <img src="/static/images/catalogue/femme5.jpeg" alt="Modèle Femme 5">
+            <!-- Images des modèles femme -->
+
+        </div>
+        <!-- Ajouter les autres modèles femme ici -->
+
+        <div class="button-container">
+            <!-- Conteneur pour le bouton -->
+            <button style="margin-top: 10px; font-size: larger;">Suivant</button>
+            <!-- Bouton "Suivant" avec des styles en ligne -->
+        </div>
+    </div>
+
+    <h2 style="font-weight: bold; color: #008080;">Homme</h2>
+    <!-- Sous-titre pour la section "Homme" avec des styles en ligne -->
+
+    <div class="model" style="margin-bottom: 20px;">
+        <!-- Conteneur pour les modèles homme avec une marge en bas -->
+
+        <div class="image-container">
+            <!-- Conteneur pour les images -->
+
+            <img src="/static/images/catalogue/homme1.jpeg" alt="Modèle Homme 1">
+            <img src="/static/images/catalogue/homme2.jpeg" alt="Modèle Homme 2">
+            <img src="/static/images/catalogue/homme3.webp" alt="Modèle Homme 3">
+            <img src="/static/images/catalogue/homme4.jpeg" alt="Modèle Homme 4">
+            <img src="/static/images/catalogue/homme5.jpeg" alt="Modèle Homme 5">
+            <!-- Images des modèles homme -->
+
+        </div>
+        <!-- Ajouter les autres modèles homme ici -->
+
+        <div class="button-container">
+            <!-- Conteneur pour le bouton -->
+            <button style="margin-top: 10px; font-size: larger;">Suivant</button>
+            <!-- Bouton "Suivant" avec des styles en ligne -->
+        </div>
+    </div>
+
+    <h2 style="font-weight: bold; color: #008080;">Enfants</h2>
+    <!-- Sous-titre pour la section "Enfants" avec des styles en ligne -->
+
+    <div class="model" style="margin-bottom: 20px;">
+        <!-- Conteneur pour les modèles enfants avec une marge en bas -->
+
+        <div class="image-container">
+            <!-- Conteneur pour les images -->
+
+            <img src="/static/images/catalogue/enfant1.jpeg" alt="Modèle Enfant 1">
+            <img src="/static/images/catalogue/enfant2.jpeg" alt="Modèle Enfant 2">
+            <img src="/static/images/catalogue/enfant3.jpeg" alt="Modèle Enfant 3">
+            <img src="/static/images/catalogue/enfant4.jpeg" alt="Modèle Enfant 4">
+            <img src="/static/images/catalogue/enfant5.jpeg" alt="Modèle Enfant 5">
+            <!-- Images des modèles enfants -->
+
+        </div>
+        <!-- Ajouter les autres modèles enfant ici -->
+
+        <div class="button-container">
+            <!-- Conteneur pour le bouton -->
+            <button style="margin-top: 10px; font-size: larger;">Suivant</button>
+            <!-- Bouton "Suivant" avec des styles en ligne -->
+        </div>
+    </div>
+</section>
+
+<!-- Styles CSS intégrés pour la mise en forme des éléments -->
+<style>
+    .model {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Conteneur centré verticalement avec flexbox */
+    }
+
+    .model > .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+        /* Conteneur d'images utilisant flexbox pour l'alignement et le wrapping */
+    }
+
+    .model img {
+        width: auto;
+        height: 300px;
+        margin: 10px;
+        object-fit: cover;
+        /* Images avec taille fixe, marge et ajustement de l'objet */
+    }
+
+    .model .button-container {
+        margin-top: 10px;
+        /* Conteneur de bouton avec marge en haut */
+    }
+</style>
+{{end}}

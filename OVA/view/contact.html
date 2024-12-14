@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact et Informations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Contact et Informations</h1>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#location">Localisation</a></li>
+                <li><a href="#social-media">Réseaux Sociaux</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulaire de contact -->
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form" action="/send_message" method="POST">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Localisation -->
+        <section id="location">
+            <h2>Notre Localisation</h2>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+
+        <!-- Réseaux sociaux -->
+        <section id="social-media">
+            <h2>Suivez-nous sur les Réseaux Sociaux</h2>
+            <div class="social-widget">
+                <h3>Facebook</h3>
+                <!-- Widget Facebook -->
+                <div id="fb-root"></div>
+                <div class="fb-page" 
+                     data-href="https://www.facebook.com/facebook" 
+                     data-tabs="timeline" 
+                     data-width="" 
+                     data-height="" 
+                     data-small-header="false" 
+                     data-adapt-container-width="true" 
+                     data-hide-cover="false" 
+                     data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/facebook">Facebook</a>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="social-widget">
+                <h3>Twitter</h3>
+                <!-- Widget Twitter -->
+                <a class="twitter-timeline" href="https://twitter.com/TwitterDev" data-height="400">Tweets by TwitterDev</a> 
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+    <!-- Script Facebook SDK -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v10.0" nonce="s1u2n3c4"></script>
+</body>
+</html>

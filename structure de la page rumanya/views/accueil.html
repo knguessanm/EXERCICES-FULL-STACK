@@ -1,0 +1,81 @@
+{{define "content"}}
+<section style="text-align: center;">
+    <!-- Section centrée contenant le titre principal -->
+    <h1>Bienvenue sur notre site de mode</h1>
+    <!-- Paragraphe descriptif invitant les visiteurs à découvrir les collections -->
+    <p>Découvrez les dernières tendances de la mode avec nos collections uniques.</p>
+</section>
+
+<section style="text-align: center;">
+    <!-- Section centrée avec un lien vers le catalogue -->
+    <a href="/catalogue">
+        <h2>Catalogue</h2>
+    </a>
+    
+    <div>
+        <!-- Galerie d'images avec des liens vers les images en taille réelle -->
+        <a href="/static/images/accueil/image1.jpeg">
+            <img src="/static/images/accueil/image1.jpeg" alt="Mode Image 1" class="uniform-image">
+        </a>
+
+        <a href="/static/images/accueil/image2.jpeg">
+            <img src="/static/images/accueil/image2.jpeg" alt="Mode Image 2" class="uniform-image">
+        </a>
+
+        <a href="/static/images/accueil/image3.jpeg">
+            <img src="/static/images/accueil/image3.jpeg" alt="Mode Image 3" class="uniform-image">
+        </a>
+
+        <a href="/static/images/accueil/image4.jpeg">
+            <img src="/static/images/accueil/image4.jpeg" alt="Mode Image 4" class="uniform-image">
+        </a>
+
+        <a href="/static/images/accueil/image5.jpeg">
+            <img src="/static/images/accueil/image5.jpeg" alt="Mode Image 5" class="uniform-image">
+        </a>
+    </div>
+</section>
+
+<section style="text-align: center;">
+    <!-- Section centrée avec des informations sur le site ou l'entreprise -->
+    <h2>À propos</h2>
+    <p>Nous sommes passionnés par la mode et nous nous efforçons de vous offrir les meilleures pièces.</p>
+</section>
+
+<!-- Styles CSS intégrés pour la mise en forme des éléments -->
+<style>
+    /* Style pour les paragraphes */
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style pour les titres de niveau 1 */
+    h1 {
+        text-align: center;
+    }
+
+    /* Style pour les titres de niveau 2 */
+    h2 {
+        text-align: center;
+    }
+
+    /* Style pour les sections, ajoutant une marge verticale */
+    section {
+        margin: 20px 0;
+    }
+
+    /* Style pour les images, les affichant en ligne avec une marge */
+    img {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    /* Styles personnalisés pour des tailles d'images uniformes */
+    .uniform-image {
+        width: 450px; /* Largeur définie */
+        height: 400px; /* Hauteur définie */
+        object-fit: cover; /* Maintient le ratio d'aspect et couvre toute la zone */
+        margin: 10px; /* Optionnel : Ajoute une marge autour des images */
+    }
+</style>
+{{end}}

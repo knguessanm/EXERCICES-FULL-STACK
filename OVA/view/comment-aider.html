@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG - Dons, Bénévolat et Partenariats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ONG - Contribuer et Partager</h1>
+        <nav>
+            <ul>
+                <li><a href="#donations">Faire un Don</a></li>
+                <li><a href="#volunteer">Devenir Bénévole</a></li>
+                <li><a href="#partnerships">Partenariats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulaire de don -->
+        <section id="donations">
+            <h2>Faire un Don</h2>
+            <form id="donation-form" action="/process_donation" method="POST">
+                <label for="amount">Montant du Don:</label>
+                <input type="number" id="amount" name="amount" required>
+                
+                <label for="donation-type">Type de Don:</label>
+                <select id="donation-type" name="donation-type" required>
+                    <option value="one-time">Unique</option>
+                    <option value="recurring">Récurrent</option>
+                </select>
+
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="payment-method">Méthode de Paiement:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Carte de Crédit</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <!-- Champ pour intégrer des scripts de paiement (par exemple Stripe) -->
+                <div id="payment-details"></div>
+
+                <button type="submit">Donner</button>
+            </form>
+        </section>
+
+        <!-- Formulaire d'inscription pour les bénévoles -->
+        <section id="volunteer">
+            <h2>Devenir Bénévole</h2>
+            <form id="volunteer-form" action="/register_volunteer" method="POST">
+                <label for="volunteer-name">Nom:</label>
+                <input type="text" id="volunteer-name" name="volunteer-name" required>
+                
+                <label for="volunteer-email">Email:</label>
+                <input type="email" id="volunteer-email" name="volunteer-email" required>
+                
+                <label for="opportunities">Opportunités:</label>
+                <select id="opportunities" name="opportunities" required>
+                    <option value="tree-planting">Plantation d'Arbres</option>
+                    <option value="food-distribution">Distribution de Nourriture</option>
+                    <option value="teaching">Enseignement</option>
+                </select>
+
+                <label for="availability">Disponibilité:</label>
+                <input type="text" id="availability" name="availability" required>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+
+        <!-- Informations sur les partenariats -->
+        <section id="partnerships">
+            <h2>Partenariats</h2>
+            <p>Nous collaborons avec des entreprises et des organisations pour atteindre nos objectifs communs. Si vous êtes intéressé par un partenariat, contactez-nous à <a href="mailto:partnerships@example.com">partnerships@example.com</a>.</p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

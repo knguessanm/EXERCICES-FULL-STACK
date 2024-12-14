@@ -1,0 +1,116 @@
+{{define "content"}}
+<!-- Début de la section des services -->
+<div class="services_section layout_padding">
+    <!-- Section avec une marge de padding définie -->
+    <div class="container-fluid">
+        <!-- Conteneur fluide Bootstrap -->
+        <div class="row">
+            <!-- Ligne pour organiser les colonnes -->
+            <div class="col-sm-12">
+                <!-- Colonne prenant toute la largeur sur petits écrans -->
+                <h1 class="services_taital">Services</h1>
+                <!-- Titre de la section -->
+            </div>
+        </div>
+        <div class="services_section_2 mb-4">
+            <!-- Deuxième partie de la section des services avec une marge en bas -->
+            <div class="row justify-content-center">
+                <!-- Ligne avec les colonnes centrées -->
+                <div class="col-lg-3 col-sm-6">
+                    <!-- Colonne prenant 3/12 sur grand écran et 6/12 sur petit écran -->
+                    <div class="box_main active">
+                        <!-- Boîte principale avec une classe active -->
+                        <h4 class="development_text">Vente de Produits</h4>
+                        <!-- Titre de la boîte -->
+                        <div class="service_img">
+                            <!-- Conteneur pour l'image du service -->
+                            <img src="/static/images/service/venteprod.jpeg" alt="Vente de Produits">
+                            <!-- Image du service -->
+                        </div>
+                        <div class="service_info">
+                            <!-- Informations sur le service -->
+                            <p class="services_text">
+                                <!-- Texte décrivant le service -->
+                                Large choix de vêtements, chaussures, et accessoires pour différentes cibles (hommes, femmes, enfants). Collections saisonnières et collaborations exclusives.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="box_main">
+                        <h4 class="development_text">Personnalisation</h4>
+                        <div class="service_img">
+                            <img src="/static/images/service/personnalisation.jpeg" alt="Personnalisation">
+                        </div>
+                        <div class="service_info">
+                            <p class="services_text">
+                                Personnalisation des articles et Conseils de style personnalisés basés sur les préférences et les achats précédents.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="box_main">
+                        <h4 class="development_text">Services de Livraison</h4>
+                        <div class="service_img">
+                            <img src="/static/images/service/livrer.jpeg" alt="Services de Livraison">
+                        </div>
+                        <div class="service_info">
+                            <p class="services_text">
+                                Livraison gratuite ou réduite à partir d’un certain montant d’achat. Livraison express ou le jour même pour les commandes urgentes. Suivi en temps réel des commandes et des livraisons.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="box_main">
+                        <h4 class="development_text">Programmes de Fidélité</h4>
+                        <div class="service_img">
+                            <img src="/static/images/service/fidelité.jpeg" alt="Programmes de Fidélité">
+                        </div>
+                        <div class="service_info">
+                            <p class="services_text">
+                                Réductions et offres exclusives pour les membres fidèles. Accès anticipé aux nouvelles collections et ventes privées.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de la section des services -->
+<style>
+    .development_text {
+        font-weight: bold;
+        color: #001f3f;
+        /* Couleur bleu nuit */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .services_text {
+        text-align: justify;
+        /* Justification du texte */
+    }
+    .services_taital {
+        margin-top: 30px;
+        /* Espacement du titre par rapport au reste du contenu */
+        text-align: left;
+        /* Aligner à gauche */
+    }
+    .service_img {
+        max-width: 100%;
+        /* Taille maximale de l'image */
+        height: auto;
+        /* Hauteur automatique pour maintenir le ratio */
+        display: block;
+        /* Pour aligner l'image avec le texte en dessous */
+        margin: 0 auto;
+        /* Centrer l'image */
+    }
+    .service_info {
+        padding: 10px;
+        /* Espace autour du texte */
+    }
+</style>
+{{end}}

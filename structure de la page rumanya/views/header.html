@@ -1,0 +1,119 @@
+{{define "header"}}
+<!-- Début de la section du header -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <!-- Barre de navigation sombre fixée en haut de la page -->
+
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Conteneur fluide Bootstrap pour centrer et aligner les éléments horizontalement -->
+
+        <a class="navbar-brand" href="/">
+            <!-- Lien vers la page d'accueil -->
+            <img src="/static/images/logomode2.jpeg" alt="Logo" class="logo" height="50" width="50">
+            <!-- Logo de la marque avec des dimensions spécifiées -->
+        </a>
+        <!-- Fin du logo -->
+
+        <h1 id="im">Rumanya's
+            <!-- Titre principal -->
+            <span>Shop</span>
+            <!-- Mot "Shop" stylisé avec une couleur spécifique -->
+
+            <style>
+                span {
+                    color: rgb(241, 15, 230);
+                    /* Couleur rose pour le mot "Shop" */
+                }
+
+                #im {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color: #000000;
+                    font-weight: 800;
+                    /* Styles pour le titre principal */
+                }
+            </style>
+        </h1>
+        <!-- Fin du titre principal -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Bouton pour ouvrir le menu offcanvas -->
+
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <!-- Menu offcanvas sombre qui s'ouvre du côté droit -->
+
+            <div class="offcanvas-header">
+                <!-- En-tête du menu offcanvas -->
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                <!-- Titre du menu offcanvas -->
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <!-- Bouton pour fermer le menu -->
+            </div>
+            <!-- Fin de l'en-tête du menu offcanvas -->
+
+            <div class="offcanvas-body">
+                <!-- Corps du menu offcanvas -->
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <!-- Liste de liens de navigation centrés et étendus -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" onclick="highlight(this)">Accueil</a>
+                    </li>
+                    <!-- Lien vers la page d'accueil -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services" onclick="highlight(this)">Services</a>
+                    </li>
+                    <!-- Lien vers la page des services -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/catalogue" onclick="highlight(this)">Catalogue</a>
+                    </li>
+                    <!-- Lien vers la page du catalogue -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/achat" onclick="highlight(this)">Achats</a>
+                    </li>
+                    <!-- Lien vers la page des achats -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact" onclick="highlight(this)">Contact</a>
+                    </li>
+                    <!-- Lien vers la page de contact -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/equipe" onclick="highlight(this)">Équipe</a>
+                    </li>
+                    <!-- Lien vers la page de l'équipe -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog" onclick="highlight(this)">Blog</a>
+                    </li>
+                    <!-- Lien vers la page du blog -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/temoignage" onclick="highlight(this)">Témoignages</a>
+                    </li>
+                    <!-- Lien vers la page des témoignages -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq" onclick="highlight(this)">FAQ</a>
+                    </li>
+                    <!-- Lien vers la page des FAQ -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/info" onclick="highlight(this)">Infos</a>
+                    </li>
+                    <!-- Lien vers la page des informations -->
+
+                </ul>
+                <!-- Fin de la liste de liens de navigation -->
+            </div>
+            <!-- Fin du corps du menu offcanvas -->
+        </div>
+        <!-- Fin du menu offcanvas sombre -->
+    </div>
+    <!-- Fin du conteneur fluide -->
+</nav>
+<!-- Fin de la section du header -->
+{{end}}

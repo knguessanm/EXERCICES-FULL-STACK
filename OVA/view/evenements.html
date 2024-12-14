@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier et Galeries d'Événements</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@5.10.1/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@5.10.1/main.min.css">
+</head>
+<body>
+    <header>
+        <h1>Événements de l'ONG</h1>
+        <nav>
+            <ul>
+                <li><a href="#calendar">Calendrier des Événements</a></li>
+                <li><a href="#galleries">Galeries d'Événements Passés</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Calendrier des événements -->
+        <section id="calendar">
+            <h2>Calendrier des Événements</h2>
+            <div id="calendar-container"></div>
+        </section>
+
+        <!-- Galeries des événements passés -->
+        <section id="galleries">
+            <h2>Galeries d'Événements Passés</h2>
+            <div class="gallery">
+                <h3>Événement 1</h3>
+                <div class="gallery-images">
+                    <img src="images/event1-1.jpg" alt="Événement 1 - Image 1">
+                    <img src="images/event1-2.jpg" alt="Événement 1 - Image 2">
+                </div>
+            </div>
+            <div class="gallery">
+                <h3>Événement 2</h3>
+                <div class="gallery-images">
+                    <img src="images/event2-1.jpg" alt="Événement 2 - Image 1">
+                    <img src="images/event2-2.jpg" alt="Événement 2 - Image 2">
+                </div>
+            </div>
+            <!-- Ajoutez plus de galeries au besoin -->
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@5.10.1/main.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

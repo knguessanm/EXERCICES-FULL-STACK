@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Blog de l'ONG</title>
+        <link>http://www.example.com/</link>
+        <description>Les derniers articles du blog de l'ONG</description>
+        <item>
+            <title>Titre de l'article 1</title>
+            <link>http://www.example.com/#article1</link>
+            <description>Contenu de l'article 1. Ceci est un exemple de contenu pour l'article 1.</description>
+            <pubDate>Wed, 01 Jan 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>Titre de l'article 2</title>
+            <link>http://www.example.com/#article2</link>
+            <description>Contenu de l'article 2. Ceci est un exemple de contenu pour l'article 2.</description>
+            <pubDate>Thu, 02 Jan 2024 00:00:00 GMT</pubDate>
+        </item>
+        <!-- Ajoutez d'autres articles ici -->
+    </channel>
+</rss>

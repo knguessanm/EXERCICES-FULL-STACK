@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets de l'ONG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Projets de l'ONG</h1>
+        <nav>
+            <ul>
+                <li><a href="#map">Carte Interactive</a></li>
+                <li><a href="#gallery">Galerie Multimédia</a></li>
+                <li><a href="#projects">Détails des Projets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Carte interactive -->
+        <section id="map">
+            <h2>Carte Interactive</h2>
+            <div id="map-container"></div>
+        </section>
+
+        <!-- Galerie multimédia -->
+        <section id="gallery">
+            <h2>Galerie Multimédia</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="photo1.jpg" alt="Photo du projet 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo2.jpg" alt="Photo du projet 2">
+                </div>
+                <div class="gallery-item">
+                    <video src="video1.mp4" controls></video>
+                </div>
+                <!-- Ajoutez d'autres éléments de galerie ici -->
+            </div>
+        </section>
+
+        <!-- Détails des projets -->
+        <section id="projects">
+            <h2>Détails des Projets</h2>
+            <div class="project-details" id="project1">
+                <h3>Projet 1</h3>
+                <p>Description : Description du projet 1.</p>
+                <p>Objectifs : Objectifs du projet 1.</p>
+                <p>Résultats : Résultats du projet 1.</p>
+                <p><a href="participation.html">Moyens de participation</a></p>
+            </div>
+            <div class="project-details" id="project2">
+                <h3>Projet 2</h3>
+                <p>Description : Description du projet 2.</p>
+                <p>Objectifs : Objectifs du projet 2.</p>
+                <p>Résultats : Résultats du projet 2.</p>
+                <p><a href="participation.html">Moyens de participation</a></p>
+            </div>
+            <!-- Ajoutez d'autres détails de projet ici -->
+        </section>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

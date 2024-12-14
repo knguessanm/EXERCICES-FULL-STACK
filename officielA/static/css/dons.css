@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.auth-buttons button {
+    background-color: #f04;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* Donation Options */
+.donation-options {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.donation-options h2 {
+    margin-bottom: 2rem;
+}
+
+.donation-presets {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.donation-option {
+    flex: 1 0 200px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.donation-option label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.donation-option p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.donation-type {
+    margin-bottom: 2rem;
+}
+
+.donation-type label {
+    margin-right: 1rem;
+}
+
+.donation-form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.donation-form h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.donation-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.donation-form input[type="text"],
+.donation-form input[type="email"],
+.donation-form textarea,
+.donation-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.donation-form button {
+    background-color: #f04;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.newsletter button {
+    background-color: #f04;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}

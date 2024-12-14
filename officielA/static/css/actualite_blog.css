@@ -1,0 +1,139 @@
+/* Styles pour Articles Récents */
+.blog-posts {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+}
+
+.blog-posts .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blog-posts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.blog-posts .post {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-posts .post h3 {
+    margin-bottom: 0.5rem;
+}
+
+.blog-posts .post p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.blog-posts .post .read-more {
+    display: inline-block;
+    background-color: #f04;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-posts .post .read-more:hover {
+    background-color: #d03;
+}
+
+.blog-posts .post .categories {
+    margin-top: 0.5rem;
+}
+
+.blog-posts .post .category {
+    display: inline-block;
+    background-color: #ccc;
+    color: #333;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 3px;
+}
+
+/* Styles pour Détail d'un Article */
+.article-detail {
+    padding: 2rem 0;
+}
+
+.article-detail .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.article-detail article {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-detail article h2 {
+    margin-bottom: 1rem;
+}
+
+.article-detail article p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.article-detail .comments {
+    margin-top: 2rem;
+}
+
+.article-detail .comments h3 {
+    margin-bottom: 1rem;
+}
+
+.article-detail .comment {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.article-detail .comment p {
+    margin-bottom: 0.5rem;
+}
+
+.article-detail form {
+    margin-top: 1rem;
+}
+
+.article-detail form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.article-detail form input,
+.article-detail form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.article-detail form button {
+    background-color: #f04;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.article-detail form button:hover {
+    background-color: #d03;
+}

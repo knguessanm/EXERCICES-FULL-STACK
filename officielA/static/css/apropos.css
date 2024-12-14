@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.auth-buttons button {
+    background-color: #f04;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Mission et Vision */
+.mission-vision {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.mission-vision h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mission, .vision {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mission h3, .vision h3 {
+    margin-bottom: 1rem;
+}
+
+.mission-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.mission-icons .icon {
+    text-align: center;
+}
+
+.mission-icons .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.vision-graph {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.vision-graph img {
+    max-width: 100%;
+}
+
+/* Équipe */
+.team {
+    padding: 2rem 0;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+/* Histoire */
+.history {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    /* Utilisez ici les styles pour la ligne de temps */
+}

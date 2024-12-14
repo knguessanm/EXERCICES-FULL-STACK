@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Vision d'Amour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Vision d'Amour">
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="donate.html">Dons</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="location.href='login.html'">Connexion</button>
+            <button onclick="location.href='register.html'">Inscription</button>
+        </div>
+    </header>
+
+    <!-- Carte Interactive -->
+    <section class="interactive-map">
+        <h2>Nos Projets</h2>
+        <div class="view-toggle">
+            <button id="map-view">Vue Carte</button>
+            <button id="list-view">Vue Liste</button>
+        </div>
+        <div id="map-container" class="map-view">
+            <!-- Intégration de la carte interactive -->
+            <div id="map"></div>
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="">Toutes les Catégories</option>
+                    <option value="education">Éducation</option>
+                    <option value="health">Santé</option>
+                </select>
+                <select id="location-filter">
+                    <option value="">Toutes les Localisations</option>
+                    <option value="africa">Afrique</option>
+                    <option value="asia">Asie</option>
+                </select>
+            </div>
+        </div>
+        <div id="list-container" class="list-view hidden">
+            <!-- Liste des projets -->
+            <div class="project-item">
+                <div class="project-thumbnail">
+                    <img src="project1.jpg" alt="Projet 1">
+                </div>
+                <div class="project-info">
+                    <h3>Projet 1</h3>
+                    <p>Status: <span class="status ongoing">En cours</span></p>
+                    <p>Brève description du projet 1.</p>
+                    <button onclick="location.href='project-details.html?id=1'">En savoir plus</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-thumbnail">
+                    <img src="project2.jpg" alt="Projet 2">
+                </div>
+                <div class="project-info">
+                    <h3>Projet 2</h3>
+                    <p>Status: <span class="status completed">Terminé</span></p>
+                    <p>Brève description du projet 2.</p>
+                    <button onclick="location.href='project-details.html?id=2'">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Détail d'un Projet -->
+    <section class="project-details">
+        <h2>Nom du Projet</h2>
+        <div class="project-description">
+            <p>Description complète du projet, objectifs, activités, bénéficiaires.</p>
+            <div class="infographics">
+                <!-- Intégration des infographies -->
+                <img src="infographic1.png" alt="Infographie 1">
+                <img src="infographic2.png" alt="Infographie 2">
+            </div>
+        </div>
+        <div class="multimedia-gallery">
+            <h3>Galerie Multimédia</h3>
+            <div class="gallery-item">
+                <img src="photo1.jpg" alt="Photo 1">
+                <div class="gallery-actions">
+                    <button onclick="shareOnSocialMedia('photo1.jpg')">Partager</button>
+                    <button onclick="commentOnMedia('photo1.jpg')">Commenter</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="video1.jpg" alt="Vidéo 1">
+                <div class="gallery-actions">
+                    <button onclick="shareOnSocialMedia('video1.jpg')">Partager</button>
+                    <button onclick="commentOnMedia('video1.jpg')">Commenter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

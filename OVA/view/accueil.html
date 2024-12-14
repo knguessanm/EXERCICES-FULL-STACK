@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web de L'ONG VISION D'AMOUR</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
+</head>
+<body>
+    <header>
+        <h1>AKWABA  ONG  VISION D' AMOUR</h1>
+    </header>
+    <main>
+        <!-- Bannière dynamique -->
+        <section class="banner">
+            <div class="slides">
+                <div class="slide"><img src="image1.jpg" alt="Plantation d'arbres"></div>
+                <div class="slide"><img src="image2.jpg" alt="Distribution de nourriture"></div>
+                <div class="slide"><img src="video1.mp4" alt="Vidéo des actions sur le terrain"></div>
+            </div>
+        </section>
+
+        <!-- Appel à l'action -->
+        <section class="call-to-action">
+            <button onclick="location.href='donation.html'">Faire un don</button>
+            <button onclick="location.href='volunteer.html'">Devenir bénévole</button>
+            <button onclick="location.href='newsletter.html'">S'inscrire à la newsletter</button>
+        </section>
+
+        <!-- Dernières nouvelles -->
+        <section class="latest-news">
+            <h2>Dernières Nouvelles</h2>
+            <div id="news-container">
+                <!-- Les nouvelles seront insérées ici via JavaScript -->
+            </div>
+        </section>
+    </main>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

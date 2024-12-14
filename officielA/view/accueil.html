@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Vision d'Amour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.jpg" alt="Logo Vision d'Amour">
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li>
+                    <a href="projects.html">Projets</a>
+                    <ul class="dropdown">
+                        <li><a href="projects-current.html">Projets en cours</a></li>
+                        <li><a href="projects-past.html">Projets passés</a></li>
+                    </ul>
+                </li>
+                <li><a href="donate.html">Dons</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="blog-news.html">Actualités</a></li>
+                        <li><a href="blog-events.html">Événements</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="location.href='login.html'">Connexion</button>
+            <button onclick="location.href='register.html'">Inscription</button>
+        </div>
+    </header>
+
+    <!-- Bannière Principale -->
+    <section class="main-banner">
+        <div class="banner-content">
+            <h1 class="banner-message">Bienvenue sur Vision d'Amour - Ensemble pour un avenir meilleur</h1>
+            <button onclick="location.href='donate.html'">Faire un Don</button>
+            <button onclick="location.href='projects.html'">Découvrir nos Projets</button>
+        </div>
+    </section>
+
+    <!-- Section Projets en Vedette -->
+    <section class="featured-projects">
+        <h2>Projets en Vedette</h2>
+        <div class="map-container">
+            <!-- Intégration de la carte interactive avec des filtres -->
+            <div id="map"></div>
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="">Toutes les Catégories</option>
+                    <option value="education">Éducation</option>
+                    <option value="health">Santé</option>
+                </select>
+                <select id="location-filter">
+                    <option value="">Toutes les Localisations</option>
+                    <option value="africa">Afrique</option>
+                    <option value="asia">Asie</option>
+                </select>
+            </div>
+        </div>
+        <div class="project-summaries">
+            <!-- Résumé des projets -->
+            <div class="project-summary">
+                <h3>Projet 1</h3>
+                <p>Brève description du projet 1.</p>
+            </div>
+            <div class="project-summary">
+                <h3>Projet 2</h3>
+                <p>Brève description du projet 2.</p>
+            </div>
+            <button onclick="location.href='projects.html'">Voir tous les projets</button>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials">
+        <h2>Témoignages</h2>
+        <div class="testimonial-slider">
+            <!-- Slider de témoignages avec photos -->
+            <div class="testimonial">
+                <img src="person1.jpg" alt="Personne 1">
+                <p>"Témoignage de la personne 1."</p>
+            </div>
+            <div class="testimonial">
+                <img src="person2.jpg" alt="Personne 2">
+                <p>"Témoignage de la personne 2."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de Page -->
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">À propos</a>
+            <a href="projects.html">Projets</a>
+            <a href="contact.html">Contact</a>
+            <a href="legal.html">Mentions Légales</a>
+            <a href="privacy.html">Politique de Confidentialité</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <div class="newsletter">
+            <form>
+                <label for="email">Inscrivez-vous à notre newsletter :</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
